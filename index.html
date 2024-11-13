@@ -91,17 +91,19 @@
       })(window, document, "script", "dataLayer");
     </script>
     <script type="text/javascript">
-      function initClarity(t, e, i, n, a, r, c) {
-        (t[i] =
-          t[i] ||
-          function () {
-            (t[i].q = t[i].q || []).push(arguments);
-          }),
-          ((r = e.createElement(n)).async = 1),
-          (r.src = "https://www.clarity.ms/tag/" + a),
-          (c = e.getElementsByTagName(n)[0]).parentNode.insertBefore(r, c);
+      if (!localStorage.getItem("Isadmin")) {
+        function initClarity(t, e, i, n, a, c, r) {
+          (t[i] =
+            t[i] ||
+            function () {
+              (t[i].q = t[i].q || []).push(arguments);
+            }),
+            ((c = e.createElement(n)).async = 1),
+            (c.src = "https://www.clarity.ms/tag/" + a),
+            (r = e.getElementsByTagName(n)[0]).parentNode.insertBefore(c, r);
+        }
+        initClarity(window, document, "clarity", "script", "jcgvvcq117");
       }
-      initClarity(window, document, "clarity", "script", "owvedfqxef");
     </script>
     <script defer="defer">
       var APP_ID = "veiaqij8";
@@ -242,7 +244,7 @@
       type="text/javascript"
       src="https://cloud.tagbox.com/react-app/media/dashboard/bootbox.min.js?v=1.0.2"
     ></script>
-    <script defer="defer" src="/static/js/main.e4c57804.js"></script>
+    <script defer="defer" src="/static/js/main.8ae89ede.js"></script>
     <link href="/static/css/main.66d56d0c.css" rel="stylesheet" />
   </head>
   <body
